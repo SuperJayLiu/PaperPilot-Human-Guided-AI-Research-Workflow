@@ -1,0 +1,10 @@
+stage,status,stage_quality_rounds,afa_reporting,last_decision,last_transcript,next_human_input_needed,ready_to_proceed
+1_question_and_story,not_started,R1/R2/R3 not started,not_updated,,,choose/refine question,no
+2_literature_and_positioning,not_started,R1/R2/R3 not started,not_updated,,,confirm literature path,no
+3_data_access_and_data_plan,not_started,R1/R2/R3 not started,not_updated,,,classify data access,no
+4_empirical_design,not_started,R1/R2/R3 not started,not_updated,,,choose design,no
+5_analysis_and_outputs,not_started,R1/R2/R3 not started,not_updated,,,choose tool/run plan,no
+6_findings_and_claims,not_started,R1/R2/R3 not started,not_updated,,,confirm claim strength,no
+7_writing_and_revision,not_started,R1/R2/R3 not started,not_updated,,,approve draft/revision,no
+8_reviewer_stress_test,not_started,R1/R2/R3 not started,not_updated,,,approve response strategy,no
+9_whole_paper_quality_cycle,not_started,final cycles not started,not_updated,,,approve final residual issues,no

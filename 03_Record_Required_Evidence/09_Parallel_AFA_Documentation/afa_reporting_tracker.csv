@@ -1,0 +1,10 @@
+stage,initial_or_stage_prompt_saved,full_conversation_saved,human_decision_saved,human_time_logged,model_config_checked,data_access_checked,claim_registry_updated,contribution_log_updated,stage_quality_status,ready_for_submission_pack,last_updated,notes,novelty_deviation_record_updated,journal_quality_score_updated
+01_Question_And_Story,no,no,no,no,no,n/a,no,no,not_started,no,,,no,NEEDS_STATUS
+02_literature_and_positioning,no,no,no,no,no,n/a,no,no,not_started,no,,,no,NEEDS_STATUS
+03_data_access_and_onboarding,no,no,no,no,no,no,n/a,no,not_started,no,,,no,NEEDS_STATUS
+04_empirical_design,no,no,no,no,no,no,no,no,not_started,no,,,no,NEEDS_STATUS
+05_analysis_and_outputs,no,no,no,no,no,no,no,no,not_started,no,,,no,NEEDS_STATUS
+06_findings_and_claims,no,no,no,no,no,no,no,no,not_started,no,,,no,NEEDS_STATUS
+07_writing_and_revision,no,no,no,no,no,no,no,no,not_started,no,,,no,NEEDS_STATUS
+08_review_and_response,no,no,no,no,no,no,no,no,not_started,no,,,no,NEEDS_STATUS
+09_whole_paper_quality_cycle,no,no,no,no,no,no,no,no,not_started,no,,,no,NEEDS_STATUS

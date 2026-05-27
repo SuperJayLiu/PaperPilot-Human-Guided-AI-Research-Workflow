@@ -1,0 +1,2 @@
+deviation_id,stage,deviation_type,standard_choice,proposed_choice,reason_for_deviation,benefit,risk,minimum_justification_needed,approved_by_human,status,linked_decision_packet
+D001,TEMPLATE,question/literature/data/method/interpretation/writing,NEEDS_USER_INPUT,NEEDS_USER_INPUT,NEEDS_USER_INPUT,NEEDS_USER_INPUT,NEEDS_USER_INPUT,NEEDS_USER_INPUT,no,open,

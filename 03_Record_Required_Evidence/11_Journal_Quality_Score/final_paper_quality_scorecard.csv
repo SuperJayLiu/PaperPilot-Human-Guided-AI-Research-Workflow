@@ -1,0 +1,11 @@
+perspective,score_0_10,evidence_used,main_weakness,required_improvement,hard_stop_flag_yes_no,round_scored
+Big question and economic importance,NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+Novel contribution and originality,NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+Literature positioning,NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+"Theory, mechanism, or conceptual clarity",NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+Data quality and construction transparency,NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+Identification or empirical-design credibility,NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+"Execution, reproducibility, and robustness",NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+Result strength and economic magnitude,NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+"Claim discipline, limitations, and referee risk",NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND
+"Writing, tables, figures, and whole-paper coherence",NEEDS_SCORE,NEEDS_EVIDENCE,NEEDS_INPUT,NEEDS_INPUT,no,NEEDS_ROUND

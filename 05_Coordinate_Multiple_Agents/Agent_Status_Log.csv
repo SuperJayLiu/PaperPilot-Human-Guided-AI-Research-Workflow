@@ -1,0 +1,2 @@
+status_id,task_id,stage,agent_role,status_summary,files_read,files_changed,checks_run,records_updated,next_action,last_updated
+S001,,,,,,,,,,

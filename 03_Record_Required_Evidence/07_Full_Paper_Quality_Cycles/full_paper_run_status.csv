@@ -1,0 +1,11 @@
+stage,status,last_decision,last_transcript,next_action,human_needed
+idea,not_started,,,,yes
+literature,not_started,,,,yes
+data,not_started,,,,yes
+design,not_started,,,,yes
+analysis,not_started,,,,yes
+writing,not_started,,,,yes
+review_cycle_1_consistency,not_started,,,,yes
+review_cycle_2_contribution,not_started,,,,yes
+review_cycle_3_final,not_started,,,,yes
+residual_issue_decision,not_started,,,,yes

@@ -1,0 +1,9 @@
+stage,round_1_status,round_2_status,round_3_status,remaining_blockers,human_approval,decision_packet,afa_report_updated,last_updated,next_action
+01_Question_And_Story,not_started,not_started,not_started,unknown,needed,,no,,
+02_literature_and_positioning,not_started,not_started,not_started,unknown,needed,,no,,
+03_data_access_and_onboarding,not_started,not_started,not_started,unknown,needed,,no,,
+04_empirical_design,not_started,not_started,not_started,unknown,needed,,no,,
+05_analysis_and_outputs,not_started,not_started,not_started,unknown,needed,,no,,
+06_findings_and_claims,not_started,not_started,not_started,unknown,needed,,no,,
+07_writing_and_revision,not_started,not_started,not_started,unknown,needed,,no,,
+08_review_and_response,not_started,not_started,not_started,unknown,needed,,no,,

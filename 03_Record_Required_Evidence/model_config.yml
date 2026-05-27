@@ -1,0 +1,10 @@
+# Model and agent configuration
+agent_mode: NEEDS_USER_INPUT  # Codex or Claude Code
+model_name: NEEDS_USER_INPUT
+model_version_or_date: NEEDS_USER_INPUT
+interface: NEEDS_USER_INPUT
+repository_commit: NEEDS_USER_INPUT
+external_tools_enabled: NEEDS_USER_INPUT
+internet_or_web_access: NEEDS_USER_INPUT
+data_access_permissions: NEEDS_USER_INPUT
+last_updated: NEEDS_USER_INPUT

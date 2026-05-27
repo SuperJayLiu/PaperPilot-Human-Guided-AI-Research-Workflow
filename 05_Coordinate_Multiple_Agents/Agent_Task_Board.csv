@@ -1,0 +1,2 @@
+task_id,stage,agent_role,status,human_decision_needed,input_needed,planned_output_file,evidence_file,next_action,last_updated
+T001,idea,Idea Screener,planned,yes,"rough idea, field, target audience if known",02_Build_The_Paper/01_Question_And_Story/,03_Record_Required_Evidence/02_Human_Decisions/,create first idea decision packet,

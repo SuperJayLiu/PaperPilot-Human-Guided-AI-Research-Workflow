@@ -1,0 +1,28 @@
+# Safety-first defaults
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+*.sqlite
+*.db
+
+# Keep private or licensed data out of Git by default
+PAPER_WORKSPACE/02_data_and_code/private_data/
+PAPER_WORKSPACE/02_data_and_code/licensed_data/
+PAPER_WORKSPACE/02_data_and_code/restricted_data/
+*.dta
+*.sas7bdat
+*.parquet
+*.feather
+*.rds
+*.pkl
+*.zip
+*.7z
+*.tar.gz
+
+# Allow explicit toy examples
+!PAPER_WORKSPACE/02_data_and_code/toy_data/
+!_repo_system/05_examples/

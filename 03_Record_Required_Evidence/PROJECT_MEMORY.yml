@@ -1,0 +1,100 @@
+# PaperPilot project memory
+# The agent must read this before asking the user questions.
+# If a stable fact is answered once, record it here and reuse it.
+
+project:
+  title: NEEDS_USER_INPUT
+  field: NEEDS_USER_INPUT
+  current_stage: idea
+  preferred_agent: NEEDS_USER_INPUT
+  preferred_coding_tool: NEEDS_USER_INPUT
+
+research_question:
+  question: NEEDS_USER_INPUT
+  contribution: NEEDS_USER_INPUT
+  story_path: NEEDS_USER_INPUT
+  rejected_paths: []
+
+data:
+  sources: []
+  access_status: NEEDS_USER_INPUT
+  ai_allowed_inputs: []
+  ai_forbidden_inputs: []
+  data_provider_rules_to_check: []
+
+empirical_design:
+  unit: NEEDS_USER_INPUT
+  period: NEEDS_USER_INPUT
+  outcome_variables: []
+  treatment_or_signal: NEEDS_USER_INPUT
+  method: NEEDS_USER_INPUT
+  inference_plan: NEEDS_USER_INPUT
+
+human_decisions:
+  key_decisions: []
+  latest_decision_id: NEEDS_USER_INPUT
+
+writing:
+  target_audience: finance/economics academic reviewers
+  journal_or_session_target: NEEDS_USER_INPUT
+  tone: cautious, source-grounded, transparent about AI use
+
+memory_change_log:
+  - date: TEMPLATE
+    changed_by: TEMPLATE
+    fact_updated: TEMPLATE
+    source_file: TEMPLATE
+    reason: TEMPLATE
+
+full_paper_run:
+  current_phase: NEEDS_USER_INPUT
+  complete_draft_path: NEEDS_USER_INPUT
+  review_cycle_1_status: not_started
+  review_cycle_2_status: not_started
+  review_cycle_3_status: not_started
+  residual_issues_status: not_started
+
+stage_quality_cycles:
+  rule: every_stage_must_pass_three_rounds_before_next_stage
+  tracker: 03_Record_Required_Evidence/08_Stage_Quality_Cycles/stage_quality_cycle_tracker.csv
+  unresolved_issue_policy: fixed_or_accepted_limitation_or_human_approved_tradeoff_or_blocked_or_future_work
+
+parallel_afa_reporting:
+  rule: reporting_updates_happen_at_every_stage_not_only_at_the_end
+  tracker: 03_Record_Required_Evidence/09_Parallel_AFA_Documentation/afa_reporting_tracker.csv
+  last_reporting_packet: NEEDS_USER_INPUT
+
+novelty_and_mainstream_deviation:
+  mainstream_benchmark: NEEDS_USER_INPUT
+  proposed_deviation: NEEDS_USER_INPUT
+  deviation_type: NEEDS_USER_INPUT
+  why_plausible: NEEDS_USER_INPUT
+  evidence_needed: []
+  falsification_tests: []
+  skeptical_referee_objections: []
+  human_risk_tolerance: NEEDS_USER_INPUT
+  current_status: not_started
+  latest_deviation_packet: NEEDS_USER_INPUT
+  rule: deviation_from_mainstream_is_not_a_flaw_by_itself_unsupported_deviation_is_a_flaw
+
+
+journal_quality_score:
+  target_benchmark: Journal of Finance-style internal benchmark, not official metric
+  idea_current_score_100: NEEDS_SCORE
+  idea_potential_ceiling_100: NEEDS_SCORE
+  idea_gate_decision: NEEDS_DECISION
+  final_paper_score_100: NEEDS_SCORE
+  final_revision_stop_rule: score_at_least_95_and_no_hard_stop_issues
+  idea_give_up_rule: potential_ceiling_70_or_below_recommend_give_up_or_pivot
+  scoring_skill: 99_System_Do_Not_Touch/02_Skills/14_journal_quality_scoring_SKILL.md
+  score_records: 03_Record_Required_Evidence/11_Journal_Quality_Score/
+  hard_stop_issues_remaining: NEEDS_INPUT
+  weakest_perspectives: []
+  last_quality_score_packet: NEEDS_USER_INPUT
+
+
+model_and_tool_memory:
+  primary_agent: NEEDS_USER_INPUT
+  model_or_plan: NEEDS_USER_INPUT
+  coding_environment: NEEDS_USER_INPUT
+  last_verified: NEEDS_USER_INPUT

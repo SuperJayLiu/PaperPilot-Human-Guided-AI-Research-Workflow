@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: PaperPilot: Human-Guided AI Research Workflow
+authors:
+  - family-names: Liu
+    given-names: Chaojie Jay
+repository-code: https://github.com/SuperJayLiu/PaperPilot-Human-Guided-AI-Research-Workflow
+message: If you use this workflow in research or teaching, please cite the repository.
