@@ -1,7 +1,7 @@
 {
   "name": "paperpilot-research-workflow",
   "version": "0.1.0",
-  "description": "Codex plugin and skill for applying PaperPilot's human-guided economics and finance research workflow.",
+  "description": "Codex plugin and skill for applying PaperPilot's human-guided economics and finance research workflow with companion AI-for-economics-and-finance skill routing.",
   "author": {
     "name": "Chaojie Jay Liu",
     "url": "https://github.com/SuperJayLiu"
@@ -20,7 +20,7 @@
   "interface": {
     "displayName": "PaperPilot Research Workflow",
     "shortDescription": "Guide one finance or economics paper with PaperPilot.",
-    "longDescription": "Apply PaperPilot's human-guided workflow for serious economics and finance research: idea screening, question formation, literature positioning, data-permission planning, empirical design, analysis outputs, claim discipline, writing revision, reviewer stress tests, AFA-style documentation, multi-agent coordination, and journal-quality scoring.",
+    "longDescription": "Apply PaperPilot's human-guided workflow for serious economics and finance research: idea screening, question formation, literature positioning, data-permission planning, empirical design, analysis outputs, claim discipline, writing revision, reviewer stress tests, AFA-style documentation, multi-agent coordination, and journal-quality scoring. The skill also asks when to apply relevant companion patterns from AI for Economics and Finance Research, including task routing, verification, agent setup, data construction, text-as-data measurement, empirical-methods audits, and disclosure checks.",
     "developerName": "Chaojie Jay Liu",
     "category": "Productivity",
     "capabilities": [
@@ -30,7 +30,7 @@
     "websiteURL": "https://github.com/SuperJayLiu/PaperPilot-Human-Guided-AI-Research-Workflow",
     "defaultPrompt": [
       "Use PaperPilot to start a research paper workflow.",
-      "Summarize the PaperPilot repo for a new researcher.",
+      "Apply relevant AI-for-econ-finance skills in PaperPilot.",
       "Run PaperPilot from the current stage to final review."
     ],
     "brandColor": "#2563EB"

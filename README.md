@@ -182,6 +182,8 @@ Use $paperpilot-research-workflow to summarize this repository for a new researc
 
 The plugin is a public wrapper around the PaperPilot workflow. It tells Codex how to apply the repository's memory-first, human-approved, evidence-recording process without requiring users to manually read every internal skill file.
 
+The root skill also knows how to ask whether to apply relevant companion patterns from [AI for Economics and Finance Research](https://github.com/SuperJayLiu/AI-for-Economics-and-Finance-Research) for task routing, research-question taste, literature synthesis, empirical-methods audits, data construction, text-as-data measurement, verification, agent setup, peer review, and disclosure. That companion repository is used as read-only source material; PaperPilot's public plugin and `SKILL.md` remain on this repository's main page.
+
 ---
 
 ## Choose your agent

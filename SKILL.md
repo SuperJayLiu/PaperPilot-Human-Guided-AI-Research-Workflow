@@ -1,6 +1,6 @@
 ---
 name: paperpilot-research-workflow
-description: Use when a researcher wants to apply, summarize, or onboard to PaperPilot, a human-guided AI workflow for building one serious economics or finance paper from idea screening through final manuscript and required evidence records. Trigger for full-paper research workflows, research question refinement, literature positioning, data permission planning, empirical design, analysis outputs, claims discipline, writing revision, reviewer stress tests, AFA-style documentation, multi-agent research coordination, or journal-quality scoring.
+description: Use when a researcher wants to apply, summarize, or onboard to PaperPilot, a human-guided AI workflow for building one serious economics or finance paper from idea screening through final manuscript and required evidence records. Trigger for full-paper workflows, research question refinement, literature positioning, data permission planning, empirical design, analysis outputs, claims discipline, writing revision, reviewer stress tests, AFA-style documentation, multi-agent research coordination, journal-quality scoring, or routing to relevant AI-for-economics-and-finance research skills.
 ---
 
 # PaperPilot Research Workflow
@@ -40,6 +40,12 @@ If the user asks for an end-to-end run, also read:
 
 If those files are unavailable, apply the workflow from this skill and clearly state which repository records could not be checked.
 
+## Intake Rule
+
+If the user has not stated a specific task, first ask what they want to do, their field or subfield, current paper stage, what materials are safe to share, and the desired output format. Ask at most five missing questions.
+
+For long outputs, file-producing tasks, code, slides, methods sections, literature reviews, referee responses, or agentic workflows, first return `Proposed structure and assumptions` and wait for confirmation.
+
 ## Core Contract
 
 Follow this loop for every substantive stage:
@@ -53,6 +59,39 @@ Follow this loop for every substantive stage:
 7. Update memory, decisions, claims, data access, contribution, and stage records in parallel.
 
 Do not ask the user to repeat stable facts already stored in memory. If a stored fact may be outdated, quote the stored fact briefly and ask whether it is still correct.
+
+End substantial outputs with:
+
+- what was produced;
+- what was not changed;
+- what the human must verify;
+- questions for the user, if any.
+
+## Companion Skill Routing
+
+PaperPilot can learn from and apply relevant task skills from:
+
+```text
+https://github.com/SuperJayLiu/AI-for-Economics-and-Finance-Research
+```
+
+Treat that repository as read-only source material. Do not modify or push to it while working on PaperPilot.
+
+When a task matches one of the companion skills below, ask the user whether to apply the relevant AI-for-Economics-and-Finance Research skill before proceeding, unless the user already asked for it explicitly. Name the specific skill or page you intend to use, then apply only the relevant part.
+
+| PaperPilot need | Companion skill pattern to apply |
+| --- | --- |
+| first setup, agent rules, collaboration | one paper = one AI project + one Git repo + one AI-use log; approval gates for context, plan, edit, run, and publish |
+| broad topic or weak question | topic-to-tension builder, two-mechanism competition builder, closest-paper positioning, strict "so what?" test |
+| literature and contribution | source-grounded literature map, closest-paper table, fake novelty risk check, claim-to-source check |
+| economics empirical design | methods draft/audit, identification pre-mortem, methods-to-code consistency check |
+| finance empirical design | finance methods audit, timing and data-leakage checks, asset-pricing/factor-mining guardrails, event-study design checks |
+| data construction and outputs | reproducible data pipeline, WRDS/CRSP/Compustat merge plan, variable dictionary, toy-data code verification |
+| text-as-data or LLM-generated variables | LLM-as-measurement protocol, human validation sample, prompt/model sensitivity, leakage audit, archive fields |
+| verification and disclosure | verification method selector, citation/claim check, code/data-operation check, coefficient magnitude check, AI-use reproducibility packet |
+| whole-paper review or referee response | staged self-review, reviewer-risk triage, journal referee response planner |
+
+If the companion repository or linked files are not accessible, ask the user to paste the relevant skill block or proceed from this skill's compact summary while stating the limitation.
 
 ## Stage Map
 
@@ -99,6 +138,8 @@ Every major choice must include:
 Default to metadata, schemas, codebooks, toy rows, synthetic data, public URLs, and approved secure environments. Do not inspect, upload, summarize, or transform licensed, restricted, confidential, proprietary, identifiable, referee, private coauthor, or otherwise sensitive raw data unless the user confirms permission and the environment is appropriate.
 
 When data status is unclear, classify it first and defer analysis.
+
+For data, code, or generated variables, require a verification method matched to the object: toy-data tests for code, source checks for citations, timing checks for coefficients and variables, model/prompt logs for LLM-generated measures, and disclosure records for AI-assisted outputs.
 
 ## Novelty Guardrail
 
