@@ -1,0 +1,20 @@
+{
+  "name": "paperpilot",
+  "interface": {
+    "displayName": "PaperPilot"
+  },
+  "plugins": [
+    {
+      "name": "paperpilot-research-workflow",
+      "source": {
+        "source": "local",
+        "path": "./plugins/paperpilot-research-workflow"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

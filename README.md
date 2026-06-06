@@ -131,9 +131,54 @@ If you already told the agent the data source, software preference, target journ
 | Use case | How to use |
 | --- | --- |
 | Use directly | clone/download, open `01_Start_Here/`, choose Codex or Claude Code, paste the first prompt |
+| Use as a Codex plugin | install or enable `plugins/paperpilot-research-workflow/`, then invoke `$paperpilot-research-workflow` |
 | Tailor before using | clone/download, edit the start prompts, stage skills, data rules, and scoring thresholds for your paper or lab |
 
 You do **not** need to read the internal skill files to start. They are there so Codex or Claude Code can route tasks correctly. Advanced users can tailor them later.
+
+---
+
+## Use PaperPilot directly as a Codex plugin
+
+This repository includes a Codex plugin package:
+
+```text
+plugins/paperpilot-research-workflow/
+```
+
+The plugin exposes the skill:
+
+```text
+$paperpilot-research-workflow
+```
+
+If your Codex environment supports repo plugin marketplaces, use:
+
+```text
+.agents/plugins/marketplace.json
+```
+
+Otherwise, install or point Codex directly at the plugin folder:
+
+```text
+plugins/paperpilot-research-workflow/
+```
+
+After enabling the plugin, use one of these prompts:
+
+```text
+Use $paperpilot-research-workflow to start PaperPilot for this economics or finance paper. Read memory first, summarize what is known, ask only missing questions, and begin in Plan Mode.
+```
+
+```text
+Use $paperpilot-research-workflow for a full paper run from the current stage to final manuscript and evidence package. Use decision packets, three stage checks, parallel evidence records, novelty guardrails, and journal-quality scoring.
+```
+
+```text
+Use $paperpilot-research-workflow to summarize this repository for a new researcher and explain how to start safely.
+```
+
+The plugin is a public wrapper around the PaperPilot workflow. It tells Codex how to apply the repository's memory-first, human-approved, evidence-recording process without requiring users to manually read every internal skill file.
 
 ---
 

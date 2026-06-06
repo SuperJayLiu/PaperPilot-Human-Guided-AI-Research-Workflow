@@ -1,0 +1,39 @@
+{
+  "name": "paperpilot-research-workflow",
+  "version": "0.1.0",
+  "description": "Codex plugin and skill for applying PaperPilot's human-guided economics and finance research workflow.",
+  "author": {
+    "name": "Chaojie Jay Liu",
+    "url": "https://github.com/SuperJayLiu"
+  },
+  "homepage": "https://github.com/SuperJayLiu/PaperPilot-Human-Guided-AI-Research-Workflow",
+  "repository": "https://github.com/SuperJayLiu/PaperPilot-Human-Guided-AI-Research-Workflow",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "finance",
+    "economics",
+    "paper-writing",
+    "workflow",
+    "codex-skill"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "PaperPilot Research Workflow",
+    "shortDescription": "Guide one finance or economics paper with PaperPilot.",
+    "longDescription": "Apply PaperPilot's human-guided workflow for serious economics and finance research: idea screening, question formation, literature positioning, data-permission planning, empirical design, analysis outputs, claim discipline, writing revision, reviewer stress tests, AFA-style documentation, multi-agent coordination, and journal-quality scoring.",
+    "developerName": "Chaojie Jay Liu",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/SuperJayLiu/PaperPilot-Human-Guided-AI-Research-Workflow",
+    "defaultPrompt": [
+      "Use PaperPilot to start a research paper workflow.",
+      "Summarize the PaperPilot repo for a new researcher.",
+      "Run PaperPilot from the current stage to final review."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

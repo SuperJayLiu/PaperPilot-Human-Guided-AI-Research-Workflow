@@ -1,0 +1,8 @@
+interface:
+  display_name: "PaperPilot Research Workflow"
+  short_description: "Guide economics and finance papers with PaperPilot"
+  brand_color: "#2563EB"
+  default_prompt: "Use $paperpilot-research-workflow to start a human-guided economics or finance paper workflow."
+
+policy:
+  allow_implicit_invocation: true
