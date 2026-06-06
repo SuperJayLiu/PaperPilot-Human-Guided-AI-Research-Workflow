@@ -3,7 +3,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 ALLOWED_ROOT = {
     "README.md",
+    "SKILL.md",
+    "plugin.json",
     ".gitignore",
+    ".agents",
+    ".codex-plugin",
+    ".github",
+    "agents",
     "01_Start_Here",
     "02_Build_The_Paper",
     "03_Record_Required_Evidence",

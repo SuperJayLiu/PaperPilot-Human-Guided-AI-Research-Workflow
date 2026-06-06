@@ -4,7 +4,13 @@ ROOT = Path(__file__).resolve().parents[2]
 
 required = [
     'README.md',
+    'SKILL.md',
+    'plugin.json',
+    '.codex-plugin/plugin.json',
+    'agents/openai.yaml',
+    '.agents/plugins/marketplace.json',
     '01_Start_Here/README.md',
+    '01_Start_Here/10_Minute_Toy_Walkthrough.md',
     '01_Start_Here/Use_Codex.md',
     '01_Start_Here/Use_Claude_Code.md',
     '01_Start_Here/Run_Full_Paper_Process.md',
@@ -25,6 +31,7 @@ required = [
     '05_Coordinate_Multiple_Agents/Agent_Blockers_Log.csv',
     '99_System_Do_Not_Touch/02_Skills/SKILL.md',
     '99_System_Do_Not_Touch/03_Check_Scripts/check_visible_structure.py',
+    '99_System_Do_Not_Touch/03_Check_Scripts/check_root_plugin_skill.py',
     '99_System_Do_Not_Touch/03_Check_Scripts/check_clear_wording.py',
     '99_System_Do_Not_Touch/03_Check_Scripts/check_agent_behavior.py',
     '99_System_Do_Not_Touch/03_Check_Scripts/check_multi_agent_collaboration.py',

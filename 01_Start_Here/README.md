@@ -11,6 +11,8 @@ Use this folder to begin the project. Do not add data or edit paper files until 
 | 3 | Read data safety before adding materials | `Data_Safety_First.md` |
 | 4 | Start the end-to-end paper workflow | `Run_Full_Paper_Process.md` |
 
+If you want a safe preview before using your own paper, open `10_Minute_Toy_Walkthrough.md`.
+
 ## What you need to provide first
 
 You can begin with very little:

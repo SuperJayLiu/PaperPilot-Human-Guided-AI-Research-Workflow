@@ -10,6 +10,48 @@ The goal is simple:
 
 ---
 
+## Start in 2 minutes
+
+Choose the path that matches how you want to use PaperPilot.
+
+| Path | Use when | Start here |
+| --- | --- | --- |
+| Codex plugin | you want Codex to recognize PaperPilot as a reusable skill | enable this repository root, then invoke `$paperpilot-research-workflow` |
+| Direct repo workflow | you cloned or downloaded this repo for one paper | open `01_Start_Here/README.md` |
+| Toy walkthrough | you want to see the behavior before using it on real work | open `01_Start_Here/10_Minute_Toy_Walkthrough.md` |
+| Tailored lab/paper version | you want to adapt stages, records, thresholds, or prompts | open `01_Start_Here/Use_As_Is_Or_Tailor.md` |
+
+The main plugin entry files are on this repository's main page:
+
+```text
+SKILL.md
+plugin.json
+.codex-plugin/plugin.json
+agents/openai.yaml
+```
+
+Copy-ready first prompt:
+
+```text
+Use $paperpilot-research-workflow to start PaperPilot for this economics or finance paper.
+Read memory first, summarize what is already known, ask only missing questions, and begin in Plan Mode.
+Before long outputs or file edits, show proposed structure, assumptions, risks, files to update, and checks.
+```
+
+Do not upload private, licensed, restricted, confidential, identifiable, referee, coauthor-private, or proprietary material unless your institution, data provider, coauthors, and tool setting explicitly allow it.
+
+## Choose The Right Mode
+
+| Mode | Best for | What PaperPilot records |
+| --- | --- | --- |
+| Lite | quick idea screening, question sharpening, or draft feedback | memory/context notes and a verification list |
+| Standard | one serious working paper | memory, decision packets, data access, claim/risk records, stage checks |
+| AFA-ready | projects needing detailed AI-use and contribution documentation | all Standard records plus AI conversations, human contribution, model config, parallel AFA tracker, final package |
+
+If you are unsure, start in Standard mode. Use Lite only for low-stakes exploration, and use AFA-ready when disclosure and contribution records matter.
+
+---
+
 ## What PaperPilot can help you do
 
 | Research need | What PaperPilot does | What you still decide |

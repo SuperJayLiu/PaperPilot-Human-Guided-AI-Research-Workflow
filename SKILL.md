@@ -46,6 +46,46 @@ If the user has not stated a specific task, first ask what they want to do, thei
 
 For long outputs, file-producing tasks, code, slides, methods sections, literature reviews, referee responses, or agentic workflows, first return `Proposed structure and assumptions` and wait for confirmation.
 
+## First Response Protocol
+
+When invoked at the start of a PaperPilot session:
+
+1. Say which PaperPilot records were read and which were unavailable.
+2. Summarize stable facts already known from memory and context.
+3. Identify the current stage and recommended next stage.
+4. State whether any companion AI-for-Economics-and-Finance Research skill pattern is relevant, and ask whether to apply it if the user has not already approved it.
+5. Ask only the missing questions needed for the next decision packet.
+6. Do not edit files until the user approves a proposed action.
+
+## Operating Modes
+
+Ask the user to choose a mode if the scope is unclear:
+
+| Mode | Use when | Required records |
+| --- | --- | --- |
+| Lite | quick idea, question, or draft guidance without a full evidence package | memory/context notes and final verification list |
+| Standard | one serious paper with repeated stage checks | memory, decision packets, data access, claim/risk records, stage checks |
+| AFA-ready | paper may need detailed AI-use and contribution documentation | all Standard records plus conversation, contribution, model config, parallel AFA tracker, final package |
+
+Default to Standard for serious paper work unless the user asks for Lite or AFA-ready.
+
+## Task Router
+
+Map common user requests to the smallest useful workflow:
+
+| User says | Route to |
+| --- | --- |
+| "I have an idea" or "is this worth it?" | idea screening, journal-quality scoring, companion topic-to-tension pattern |
+| "help me frame the question" | question/story path, "so what?" test, two-mechanism competition |
+| "position this in the literature" | literature map, closest-paper table, fake novelty risk check |
+| "can I use this data?" | data access classification before analysis |
+| "what method should I use?" | empirical design decision packet and identification pre-mortem |
+| "write code" or "build tables" | analysis/output plan, toy-data verification, data pipeline checks |
+| "interpret these results" | findings/claims stage, coefficient/magnitude verification, claim registry |
+| "revise this section" | writing/revision stage, claim-to-evidence check before prose polishing |
+| "review the whole paper" | whole-paper review cycle, reviewer stress test, journal-quality scoring |
+| "prepare disclosure" | AFA documentation and AI-use reproducibility packet |
+
 ## Core Contract
 
 Follow this loop for every substantive stage:
@@ -66,6 +106,18 @@ End substantial outputs with:
 - what was not changed;
 - what the human must verify;
 - questions for the user, if any.
+
+## Stop Conditions
+
+Pause and ask for human direction when any of these occur:
+
+- data status is private, licensed, restricted, confidential, identifiable, referee-related, coauthor-private, or unknown;
+- the user asks the agent to edit files before approving a plan;
+- a citation, literature claim, data fact, coefficient, equation, or method claim cannot be verified from supplied or accessible evidence;
+- the proposed empirical design cannot support the requested causal or economic claim;
+- code would touch raw, private, licensed, or restricted data without explicit permission;
+- an LLM-generated variable lacks a prompt/model/archive/validation plan;
+- a final-ready claim is requested while unresolved hard-stop issues remain.
 
 ## Companion Skill Routing
 

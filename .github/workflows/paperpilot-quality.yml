@@ -1,0 +1,21 @@
+name: PaperPilot quality checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run PaperPilot structure checks
+        run: |
+          python3 99_System_Do_Not_Touch/03_Check_Scripts/check_visible_structure.py
+          python3 99_System_Do_Not_Touch/03_Check_Scripts/check_file_names_plain.py
+          python3 99_System_Do_Not_Touch/03_Check_Scripts/check_clear_wording.py
+          python3 99_System_Do_Not_Touch/03_Check_Scripts/check_root_plugin_skill.py
+          python3 99_System_Do_Not_Touch/03_Check_Scripts/check_skill_quality.py
+          python3 99_System_Do_Not_Touch/03_Check_Scripts/quality_gate_check.py
