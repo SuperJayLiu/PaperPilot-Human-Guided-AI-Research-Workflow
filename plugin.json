@@ -17,7 +17,6 @@
     "workflow",
     "codex-skill"
   ],
-  "skills": "./skills/",
   "interface": {
     "displayName": "PaperPilot Research Workflow",
     "shortDescription": "Guide one finance or economics paper with PaperPilot.",

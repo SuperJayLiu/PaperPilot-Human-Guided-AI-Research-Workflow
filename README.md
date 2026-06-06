@@ -131,7 +131,7 @@ If you already told the agent the data source, software preference, target journ
 | Use case | How to use |
 | --- | --- |
 | Use directly | clone/download, open `01_Start_Here/`, choose Codex or Claude Code, paste the first prompt |
-| Use as a Codex plugin | install or enable `plugins/paperpilot-research-workflow/`, then invoke `$paperpilot-research-workflow` |
+| Use as a Codex plugin | install or enable this repository root as the plugin, then invoke `$paperpilot-research-workflow` |
 | Tailor before using | clone/download, edit the start prompts, stage skills, data rules, and scoring thresholds for your paper or lab |
 
 You do **not** need to read the internal skill files to start. They are there so Codex or Claude Code can route tasks correctly. Advanced users can tailor them later.
@@ -140,10 +140,12 @@ You do **not** need to read the internal skill files to start. They are there so
 
 ## Use PaperPilot directly as a Codex plugin
 
-This repository includes a Codex plugin package:
+This repository is also a Codex plugin. The main entry files are at the repository root:
 
 ```text
-plugins/paperpilot-research-workflow/
+SKILL.md
+plugin.json
+.codex-plugin/plugin.json
 ```
 
 The plugin exposes the skill:
@@ -158,10 +160,10 @@ If your Codex environment supports repo plugin marketplaces, use:
 .agents/plugins/marketplace.json
 ```
 
-Otherwise, install or point Codex directly at the plugin folder:
+Otherwise, install or point Codex directly at this repository root:
 
 ```text
-plugins/paperpilot-research-workflow/
+PaperPilot-Human-Guided-AI-Research-Workflow/
 ```
 
 After enabling the plugin, use one of these prompts:

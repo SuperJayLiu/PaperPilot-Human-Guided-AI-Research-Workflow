@@ -8,7 +8,7 @@
       "name": "paperpilot-research-workflow",
       "source": {
         "source": "local",
-        "path": "./plugins/paperpilot-research-workflow"
+        "path": "./"
       },
       "policy": {
         "installation": "AVAILABLE",
