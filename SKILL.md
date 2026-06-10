@@ -40,6 +40,19 @@ If the user asks for an end-to-end run, also read:
 
 If those files are unavailable, apply the workflow from this skill and clearly state which repository records could not be checked.
 
+## Progressive Disclosure Map
+
+Keep this root skill as the router. Load deeper context only when the task calls for it:
+
+| Need | Read |
+| --- | --- |
+| repeated agent failure, odd behavior, or unclear guardrail | `references/paperpilot-gotchas.md` |
+| citation, code, coefficient, data, model, text-as-data, or disclosure verification | `references/verification-playbook.md` |
+| full internal PaperPilot stage library | `99_System_Do_Not_Touch/02_Skills/SKILL.md` |
+| full paper orchestration | `99_System_Do_Not_Touch/02_Skills/00_full_paper_run_SKILL.md` |
+| evidence record templates | `99_System_Do_Not_Touch/04_Templates/` |
+| deterministic repository checks | `99_System_Do_Not_Touch/03_Check_Scripts/` |
+
 ## Intake Rule
 
 If the user has not stated a specific task, first ask what they want to do, their field or subfield, current paper stage, what materials are safe to share, and the desired output format. Ask at most five missing questions.
@@ -118,6 +131,20 @@ Pause and ask for human direction when any of these occur:
 - code would touch raw, private, licensed, or restricted data without explicit permission;
 - an LLM-generated variable lacks a prompt/model/archive/validation plan;
 - a final-ready claim is requested while unresolved hard-stop issues remain.
+
+## Gotchas
+
+If the agent is about to proceed after a smooth answer, first check for common PaperPilot failures:
+
+- asking again for facts already in memory;
+- producing polished prose before checking claim support;
+- inventing or over-broadening citation claims;
+- treating data availability as a research question;
+- treating fixed effects, controls, or backtests as identification;
+- ignoring timing, leakage, delisting, survivorship, or prompt/model drift;
+- marking a stage complete before the three checks and evidence updates.
+
+For the full gotcha list and the expected correction, read `references/paperpilot-gotchas.md`.
 
 ## Companion Skill Routing
 

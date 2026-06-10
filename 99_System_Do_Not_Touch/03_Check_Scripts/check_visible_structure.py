@@ -10,6 +10,7 @@ ALLOWED_ROOT = {
     ".codex-plugin",
     ".github",
     "agents",
+    "references",
     "01_Start_Here",
     "02_Build_The_Paper",
     "03_Record_Required_Evidence",

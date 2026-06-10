@@ -9,6 +9,8 @@ required = [
     '.codex-plugin/plugin.json',
     'agents/openai.yaml',
     '.agents/plugins/marketplace.json',
+    'references/paperpilot-gotchas.md',
+    'references/verification-playbook.md',
     '01_Start_Here/README.md',
     '01_Start_Here/10_Minute_Toy_Walkthrough.md',
     '01_Start_Here/Use_Codex.md',

@@ -21,8 +21,18 @@ def main():
     codex_plugin_path = ROOT / ".codex-plugin" / "plugin.json"
     agent_yaml_path = ROOT / "agents" / "openai.yaml"
     marketplace_path = ROOT / ".agents" / "plugins" / "marketplace.json"
+    gotchas_path = ROOT / "references" / "paperpilot-gotchas.md"
+    verification_path = ROOT / "references" / "verification-playbook.md"
 
-    for path in [skill_path, plugin_path, codex_plugin_path, agent_yaml_path, marketplace_path]:
+    for path in [
+        skill_path,
+        plugin_path,
+        codex_plugin_path,
+        agent_yaml_path,
+        marketplace_path,
+        gotchas_path,
+        verification_path,
+    ]:
         if not path.exists():
             fail(f"missing {path.relative_to(ROOT)}")
 
@@ -35,6 +45,9 @@ def main():
         fail("SKILL.md frontmatter must name paperpilot-research-workflow")
     if "AI-for-economics-and-finance" not in frontmatter:
         fail("SKILL.md description should mention companion skill routing")
+    for required in ["references/paperpilot-gotchas.md", "references/verification-playbook.md"]:
+        if required not in skill:
+            fail(f"SKILL.md must point to {required}")
 
     plugin = json.loads(plugin_path.read_text(encoding="utf-8"))
     codex_plugin = json.loads(codex_plugin_path.read_text(encoding="utf-8"))
@@ -60,7 +73,14 @@ def main():
         fail("marketplace source path must point to repository root")
 
     readme = read("README.md")
-    for required in ["SKILL.md", "plugin.json", ".codex-plugin/plugin.json", "$paperpilot-research-workflow"]:
+    for required in [
+        "SKILL.md",
+        "plugin.json",
+        ".codex-plugin/plugin.json",
+        "$paperpilot-research-workflow",
+        "references/paperpilot-gotchas.md",
+        "references/verification-playbook.md",
+    ]:
         if required not in readme:
             fail(f"README.md must mention {required}")
 

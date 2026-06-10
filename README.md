@@ -30,6 +30,8 @@ plugin.json
 agents/openai.yaml
 ```
 
+PaperPilot is a skill-backed workflow, not just a prompt. The root `SKILL.md` routes the task; detailed guardrails live in one-level references such as `references/paperpilot-gotchas.md` and `references/verification-playbook.md`; deterministic checks live in `99_System_Do_Not_Touch/03_Check_Scripts/`.
+
 Copy-ready first prompt:
 
 ```text
